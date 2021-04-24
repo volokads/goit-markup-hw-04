@@ -49,7 +49,7 @@ ul {
     margin-left: 30px;
     margin-top: 30px;
 }
-.middle-headers{
+.preferenses-headers{
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -57,6 +57,19 @@ ul {
     margin-bottom: 10px;
     color: var(--headers-font-color);
 }
+.middle-headers{
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    margin-bottom: 10px;
+    color: var(--headers-font-color);
+}
+
+
 .page-header{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -130,8 +143,20 @@ ul {
     fill: var(--other-fonts);
 }
 .topsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
     padding: 200px 0;
-    background-color: #2F303A;
+    background: #C4C4C4;
+
+    background-image: url(../img/hero-overlay.png), url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
  .hero{
     display: flex;
@@ -143,7 +168,6 @@ ul {
 .main-heading{
     width: calc(100% / 12 * 7);
     margin-bottom: 20px;
-    text-align: center;
 
     font-weight: 900;
     font-size: 44px;
@@ -153,6 +177,7 @@ ul {
     text-transform: uppercase;
     color: var(--white-main-and-other);
 }
+
 .service-button{
     display: inline-block;
     align-items: center;
@@ -282,15 +307,6 @@ background-color: var(--buttons-hover-color);
     border-radius: 4px;
     
 }
-/* .clients-link{
-    width: 170px;
-    height: 90px;
-    border: 1px solid var(--svg-icons);
-    box-sizing: border-box;
-    border-radius: 4px;
-    
-
-} */
 .clients-list:not(:last-child){
     margin-right: 30px;
 }
@@ -351,14 +367,13 @@ background-color: var(--buttons-hover-color);
     cursor: pointer;
 }
 footer{
-
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
 }
 .join-us{
-display: block;
-margin-left: 70px;
+    display: block;
+    margin-left: 70px;
 }
 .join-title{
     display: block;
@@ -387,7 +402,7 @@ margin-left: 70px;
 }
 .footer-socials-links:hover,
 .footer-socials-links:focus{
-background-color: var(--buttons-hover-color);
+    background-color: var(--buttons-hover-color);
 }
 .footer-socials-icons{
     width: 20px;
@@ -451,9 +466,7 @@ background-color: var(--buttons-hover-color);
 } .portfolio-card{
     flex-basis: calc((100% - 3 * 30px) / 3);
 }  
-
 .works-list h3 {
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
